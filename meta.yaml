@@ -1,0 +1,21 @@
+package:
+  name: bootstrap
+  version: 3.1.1
+
+build:
+  number: 2
+
+test:
+  commands:
+  - ruby -e 'require "bootstrap-sass"'
+
+requirements:
+  build:
+    - ruby 2.1.1
+  run:
+    - compass 0.12.4 2
+    - ruby 2.1.1
+
+about:
+  home: http://getbootstrap.com/
+  license: MIT
