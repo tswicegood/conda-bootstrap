@@ -5,9 +5,6 @@ package:
 build:
   number: {{environ.get('BINSTAR_BUILD', 1)}}
 
-install:
-  - conda config  --add channels https://conda.binstar.org/wakari
-
 test:
   commands:
   - ruby -e 'require "bootstrap-sass"'
